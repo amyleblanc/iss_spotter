@@ -24,22 +24,4 @@ const fetchMyIP = function(callback) {
   });
 };
 
-// NodeJS EXAMPLE
-
-// http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
-//   resp.on('data', function(ip) {
-//     console.log(`${ip}`);
-//   });
-// });
-
-// JAVASCRIPT EXAMPLE
-{/* <script type="application/javascript">
-  function getIP(json) {
-    document.write("My public IP address is: ", json.ip);
-  }
-</script>
-
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> */}
-
-
 module.exports = { fetchMyIP };
